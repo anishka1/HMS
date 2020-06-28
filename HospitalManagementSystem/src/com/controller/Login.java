@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.dao.loginDao;
+import com.dao.LoginDao;
 
 /**
  * Servlet implementation class login
  */
-@WebServlet("/login")
-public class login extends HttpServlet {
+@WebServlet("/Login")
+public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
-    public login() 
+    public Login() 
     {
         super();
        
@@ -29,7 +29,7 @@ public class login extends HttpServlet {
 		String uname = request.getParameter("uname");
 	    String pass = request.getParameter("pass");
 	    
-	    loginDao dao = new loginDao();
+	    LoginDao dao = new LoginDao();
 	    
 	   if(dao.check(uname, pass))
 	   {

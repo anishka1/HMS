@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<form action="login" method="post">
+<form action="/Login" method="post">
  UserName:<input type="text" name="uname"><br>  
  Password:<input type="password" name="pass"><br>  
 <input type="submit" value="login">  

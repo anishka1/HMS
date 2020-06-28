@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class loginDao 
+public class LoginDao 
 {
 	String query = "select * from hms.userstore where uname=? and pass=?";
 	String url = "jdbc:mysql://localhost:3306/hms?autoReconnect=true&useSSL=false";
