@@ -10,7 +10,7 @@
 <%
 		if(session.getAttribute("UserName") == null)
 		{
-			response.sendRedirect("Login.jsp");
+			response.sendRedirect("login.jsp");
 		}
 	%>
  welcome ${UserName}
